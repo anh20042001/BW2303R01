@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <style>
+        body{
+            width: 28rem;
+            background-color: rgb(224, 224, 218);
+        }
+        .head-icon{
+            background-color: rgb(54, 54, 146);
+            height: 25px;
+            padding: 20px;
+            color: aliceblue;
+            font-family: Arial, Tahoma;
+            margin: 5px;
+        }
+        .head-icon #plane{
+            padding-right: 20px;
+            font-size: 18px;
+        }
+        .head-icon #search{
+            background-color: rgb(20, 20, 101);
+            padding: 5px 100px;
+            border-radius: 10px;
+        }
+        .head-icon #messenger{
+            padding-left: 20px;
+            font-size: 22px;
+        }
+        /*-----------------*/
+        .container{
+            background-color: white;
+            height: 90px;
+            margin: 0 5px;
+            padding: 20px 20px;
+        }
+        .container #facebook{
+            font-size: 40px;
+            color: rgb(54, 54, 146);
+        }
+        .container #ellipsis{
+            float: right;
+            padding: 10px;
+        }
+        #image{
+            margin: 0 4px;
+            width: 440px;
+        }
+        /*---------------------*/
+        .main-interact{
+            background-color: white;
+            height: 20px;
+            margin: 0 5px;
+            padding: 15px 15px;
+            border-bottom: 1px solid rgb(75, 70, 70);
+        }
+        .main-interact #heart{
+            color: rgb(237, 43, 43);
+            font-size: 25px;
+        }
+        .main-interact #like{
+            color: rgb(58, 25, 223);
+            font-size: 25px;
+        }
+        .main-interact #angry{
+            color: rgb(209, 114, 12);
+            font-size: 25px;
+        }
+        .main-interact #comment{
+            float: right;
+        }
+        /*-------------*/
+        .main-interacts{
+            background-color: white;
+            height: 40px;
+            margin: 0 5px;
+            padding: 15px 15px;
+        }
+        .main-interacts #like,
+        .main-interacts #comment,
+        .main-interacts #share
+        {
+            font-size: 20px;
+            padding: 0px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head-icon">
+            <i class="fa-solid fa-paper-plane" id="plane"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search">search</i>
+            <i class="fa-brands fa-facebook-messenger" id="messenger"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+                <b>My user name <label for=""> Monday at 11:00 AM </label><i class="fa-solid fa-earth-americas"></i></b>
+                <i class="fa-solid fa-ellipsis" id="ellipsis"></i>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectectuer adipiscing elit.</p>
+            </div>
+        </div>
+        <div>
+            <img src="./asset/image/Screenshot 2023-04-25 170656.png" alt="" id="image">
+        </div>
+        <div class="main-interact">
+            <i class="fa-solid fa-heart" id="heart"></i>
+            <i class="fa-solid fa-thumbs-up" id="like"></i>
+            <i class="fas fa-angry" id="angry"></i>
+            <label for="" id="interact">Lorem ipsum and 291 others</label>
+            <label for="" id="comment">55 comments</label>
+        </div>
+        <div class="main-interacts">
+            <i class="fa-regular fa-thumbs-up" id="like">Like</i>
+            <i class="fa-regular fa-comment" id="comment">Comment</i>
+            <i class="fa-solid fa-share" id="share">Share</i>    
+        </div>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

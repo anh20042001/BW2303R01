@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yii2</title>
+    <style>
+        body{
+            margin-top: 0;
+        }
+        .navbar b{
+            float: left;
+        }
+
+        .navbar{
+            background-color: rgb(47, 48, 49);
+            color: rgb(130, 131, 133);
+            padding: 10px 10px;
+            font-size: x-large;
+            height: 50px;
+            margin: 0;
+        }
+        .navbar li{
+            list-style-type: none;
+            float: right;
+            padding: 13px;
+        }
+        .navbar li:hover{
+            background-color: black;
+        }
+
+        /*main */
+        .form-main{
+            text-align: center;
+            margin: 50px;
+        }
+        .form-main b{
+            font-size: 3rem;
+        }
+        .form-main #button {
+            background-color: rgb(12, 180, 43);
+            padding: 10px 20px;
+            border-radius: 10%;
+            color: aliceblue;
+        }
+
+        /*heading*/
+        .heading {
+            margin: 40px;  
+        }
+        .heading1 {
+            margin-top: 20px;
+            width: 33%;
+            min-height: 300px;
+            float: left;  
+        }
+        .heading2 {
+            width: 33%;
+            min-height: 300px;
+            float: left;  
+        }
+        .heading3 {
+            width: 33%;
+            min-height: 300px;
+            float: right;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <b>Myapplication</b>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="" class="form-main" method="get">
+                <b>Congratulations!</b>
+                <p>You have seuccessfully created your Yii-powered application.</p>
+                <input type="button" value="Get started with Yii" name="button" id="button">
+            </form>
+        </section>
+        <section>
+            <div class="heading">
+                <div class="heading1">
+                    <b>Heading</b>
+                    <p>Yii gives you the maximum functionality by adding the least possible overhead</p>
+                    <input type="button" name="" id="" value="Yii Extention">
+                </div><br>
+                <div class="heading2">
+                    <b>Heading</b>
+                    <p>Yii gives you the maximum functionality by adding the least possible overhead</p>
+                    <input type="button" value="Yii forcus"><br>
+                </div>
+                <div class="heading3">
+                    <b>Heading</b>
+                    <p>Yii gives you the maximum functionality by adding the least possible overhead</p>
+                    <input type="button" value="Yii Doccumentation" name="" id=""><br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
