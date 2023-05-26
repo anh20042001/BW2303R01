@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webpage</title>
+<link rel="stylesheet" href="./asset/fontawesome-free-6.4.0-web/css/all.min.css">
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body{
+        font-family:Verdana;
+    }
+    .navbar {
+        background-color: rgb(46, 43, 43);
+        list-style-type: none;
+        padding: 10px ;
+    }
+    .navbar li { 
+        padding: 5px 10px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+    .navbar li a{
+        text-decoration: none;
+        font-size: x-large;
+        color: rgb(170, 165, 165);
+    }
+    .navbar i{
+        float: right;
+        font-size: 1rem;
+        padding: 11px;
+        right: 20px;
+        color: rgb(170, 165, 165);
+    }
+    .navbar :hover{
+        background-color: black;
+        color: aliceblue;
+    }
+    main{
+        overflow:auto;
+    }
+    .menu {
+        background-color: rgb(230, 228, 228);
+        float: left;
+        height: 70vh;
+        padding-top: 1rem;
+        width: 15%;
+    }
+    .menuitem {
+        padding: 8px;
+    }
+    .menu a{
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+    }
+    .content {
+        float: left;
+        width: 70%;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    .content .content-top{
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #dacdcd;
+    }
+    .content .content-top h1{
+        padding-bottom: 1rem ;
+    }
+    .content .content-bottom h3{
+        padding-top: 1rem ;
+    }
+    .right {
+        background-color: rgb(230, 228, 228);
+        float: left;
+        width: 15%;
+        height: 70vh;
+        padding: 0px 15px;
+    }
+    .right p{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        padding: 2rem 0 ;
+        border: 2px solid rgba(92, 74, 74, 0.2);
+    }
+    footer{
+        background-color:#4d4a4a;
+        text-align:center;
+        padding:20px;
+        font-size:12px;
+        color: aliceblue;
+    }
+    @media only screen and (max-width:768px) {
+        .content {
+            width: 80%;
+            padding: 0;
+            text-align: center;
+        }
+        .right {
+            width: 100%;
+        }
+        .navbar i{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:540px) {
+        .menu, .main, .right {
+            width: 100%;
+        }
+        .content {
+            padding: 1rem 0;
+            padding-left:6rem;
+        }
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="#">Logo</a>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Project</a>
+            </li>
+            <li>
+                <a  href="#">Contact</a>
+            </li>
+            <i class="fa-solid fa-right-to-bracket"> Login</i>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="menu">
+        <a href="" class="menuitem">Link</a>
+        <a href="" class="menuitem">Link</a>
+        <a href="" class="menuitem">Link</a>
+    </div>
+    <div class="content">
+        <div class="content-top">
+            <h1>Welcome</h1>
+            <p>A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties</p>           
+        </div>
+        <div class="content-bottom">
+            <h3>Test</h3>
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+    <div class="right">
+        <p>ADS</p>
+        <p>ADS</p>
+    </div>
+</main>
+<footer>
+    <h2>Footer Text</h2>
+</footer>
+</body>
+</html>

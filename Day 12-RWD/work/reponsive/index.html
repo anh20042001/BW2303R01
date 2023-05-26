@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reponsive</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            /* .container{
+                float: left;
+            } */
+            .col-3 {
+                width: 100%;
+                float: left;
+                border: 1px solid #ccc;
+                margin: 6px;
+            }
+            .col-3:hover{
+                border: 1px solid #777;
+            }
+            
+            .col-3 img{
+                width: 100%;
+                height: auto;
+            }
+            .col-3 p{
+                text-align: center;
+            }
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media only screen and (max-width: 576px) {
+                .col-3 {
+                    width: 100%;
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                .col-3 {
+                    width: 48%;
+                }
+            }   
+            @media only screen and (min-width: 1280px) {
+                .col-3 {
+                    width: 24%;
+                }
+            }        
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h3>Reponsive Image Gallery</h3>
+                        <b>Reponsive Image Gallery</b>
+                    </div><br>
+                    <div class="col-3">   
+                        <a target="_blank" href="">               
+                            <img src="./images/tải xuống (1).jpg" alt="">  
+                        </a>
+                        <p>Arts Galler Pictures</p>                
+                    </div>
+                    <div class="col-3">                  
+                        <a target="_blank" href="">               
+                            <img src="./images/tải xuống (3).jpg" alt="">  
+                        </a>
+                        <p>Arts Galler Pictures</p>               
+                    </div>
+                    <div class="col-3">
+                        <a target="_blank" href="">               
+                            <img src="./images/tải xuống (3).jpg" alt="">  
+                        </a>                        
+                        <p>Arts Galler Pictures</p>
+                    </div>
+                    <div class="col-3">
+                        <a target="_blank" href="">               
+                            <img src="./images/tải xuống.jpg" alt="">  
+                        </a>                        
+                        <p>Arts Galler Pictures</p>
+                    </div>                  
+                </div>
+            </div>
+            <div>
+                <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
