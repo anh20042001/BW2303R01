@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Horizontal Menu</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu {
+	list-style-type: none;
+	background-color: #333333;
+	/*width: 80px;*/
+	padding-left: 0;
+	/*display: flex; !* # vertical *!*/
+}
+
+.menu li {
+    text-align: center;
+
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	display: inline-block; /* # vertical */
+}
+
+.menu li a {
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.menu li:hover {
+	background-color: red;
+}
+
+.menu li:hover .sub-menu {
+	visibility: visible;
+}
+
+.sub-menu {
+	position: absolute;
+	padding-left: 0;
+	top: 1.75rem; /* # vertical */
+	left: 10px; /* # vertical */
+	list-style-type: none;
+	background-color: #333333;
+	visibility: hidden;
+}
+    </style>
+</head>
+<body>
+<header></header>
+<main>
+	<ul class="menu">
+		<li>
+			<a href="#">Sem 1</a>
+			<ul class="sub-menu">
+				<li>
+					<a href="">Computing</a>
+				</li>
+				<li>
+					<a href="">C</a>
+				</li>
+				<li>
+					<a href="">Building</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Sem 2</a>
+			<ul class="sub-menu">
+				<li>
+					<a href="">Math</a>
+				</li>
+				<li>
+					<a href="">Physics</a>
+				</li>
+				<li>
+					<a href="">English</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Sem 3</a>
+		</li>
+		<li>
+			<a href="#">Sem 4</a>
+		</li>
+	</ul>
+</main>
+<footer></footer>
+</body>
+</html>
