@@ -1,0 +1,616 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Landing page</title>
+	<link rel="stylesheet" href="asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="asset/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.4.0-web/css/all.min.css">
+	<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root{
+            --orange: #df830a;
+        }
+        body{
+            font-weight: lighter;
+            font-family: serif;
+        }
+
+        .btn:not(.nav-btns button):hover{
+            background-color: var(--orange);
+            color: #fff;
+            border-color: var(--orange);
+        }
+        .navbar .address-text{
+            font: 10px sans-serif;
+        }
+        .navbar .address-text p{
+            margin: 4px;
+        }
+        .nav-link:hover{
+            color: var(--orange)!important;
+            border-color: var(--orange);
+        }
+        #banner{
+            background: linear-gradient(rgba(0,0,0,0.5), #282e18), url(./asset/img/news/sofa.webp);
+        }
+
+        .product-img {
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+        .product-img:hover {
+            -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+        }
+        footer{
+            background: linear-gradient(rgba(0,0,0,0.5), #1f201d), url(./asset/img/logo-footer.png);
+        }
+        footer a:hover{
+            color: var(--orange)!important;
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <section id="header">
+            <div class="top-bar d-none d-sm-block bg-secondary">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="d-flex text-white align-items-center">
+                        <span class="">Hotline: +84 123123123</span>
+                        <span class="ms-2">(8am-22pm)<span class="px-2">|</span></span>
+                        <a class="text-white text-decoration-none" href="contact.html">Liên hệ</a>
+                    </div>
+                    <div class="d-flex text-white align-items-center">
+                        <i class="fa-solid fa-bell mt-1 me-1"></i>
+                        <span>Thông báo của tôi</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow">
+                <div class="container-fluid mx-3">
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="logo-header nav-link text-dark d-flex align-items-center order-lg-0" href="index.html">
+                        <i class="fa-solid fa-couch fs-4"></i>
+                        <span class="ms-2 fw-bold fs-4">WOODSHOP</span>
+                    </a>
+                    <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                        <ul class="navbar-nav mx-auto text-center fw-bold">
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link text-dark" href="index.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link text-dark" href="product.html">SẢN PHẨM</a>
+                            </li>
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link text-dark" href="new.html">TIN TỨC</a>
+                            </li>
+                            <li class="nav-item px-2 border-0">
+                                <a class="nav-link text-dark" href="intro.html">GIỚI THIỆU</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-lg-2 nav-btns d-flex">
+                        <button type="button" class=" btn dropdown position-relative">
+                            <a class="d-flex text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-location-dot fs-4 mb-1 me-2 text-dark"></i>
+                                <div class="d-none d-xl-block address-text text-dark mb-1">
+                                    <p>Giao hoặc đến lấy tại <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                                    <span>Hà Nội, Hai Bà Trưng...</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-sm-start dropdown-menu-sm-end p-2">
+                                <p class="form-title fw-bold border-bottom text-center">KHU VỰC MUA HÀNG</p>
+                                <div class="d-flex">
+                                    <div class="tinh me-3">
+                                        <label for="tinh">Tỉnh/Thành</label>
+                                        <select name="tinh" id="tinh">
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Nghệ An</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Huế</option>
+                                        </select>
+                                    </div>
+                                    <div class="quan">
+                                        <label for="cars">Quận/Huyện</label>
+                                        <select name="quan" id="quan">
+                                            <option value="">- Chọn Quận/Huyện -</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Nghệ An</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Huế</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bg-success mt-3 p-1">
+                                    <label>Giao hàng đến lấy tại:</label>
+                                    <span>Hà Nội, Quận Hai Bà Trưng</span>
+                                </div>
+                                <p>Chọn cửa hàng gần nhất để tối ưu chi phí giao hàng. Hoặc đến lấy hàng</p>
+                            </div>
+                        </button>
+                        <button type="button" class=" btn position-relative">
+                            <a class="d-flex text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-search fs-4 mb-1 me-2 text-dark"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-sm-end p-2">
+                                <p class="form-title fw-bold border-bottom text-center">Tìm Kiếm</p>
+                                <div class="d-flex border ">
+                                    <input type="search" name="" id="" class="border-0 p-2" placeholder="Tìm kiếm sản phẩm">
+                                    <label for=""><i class="fa fa-search m-3"></i></label>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" class="btn dropdown position-relative">
+                            <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user fs-4"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <form class="form text-center">
+                                    <p class="form-title fw-bold">ĐĂNG NHẬP TÀI KHOẢN</p>
+                                    <div class="input-container position-relative d-flex mx-3 border border-3 mb-3 p-2 rounded-3">
+                                        <input placeholder="Enter email" type="email" class="border-0"> 
+                                        <span><i class="fa-solid fa-at "></i></span>
+                                    </div>
+                                    <div class="input-container d-flex mx-3 border border-3 mb-3 p-2 rounded-3">
+                                        <input placeholder="Enter password" type="password" class="border-0">
+                                        <span><i class="fa-solid fa-eye"></i></span>
+                                    </div>
+                                    <input type="submit" name="" id="" placeholder="Sign in" class="btn rounded-pill border px-5 mb-2">
+                                    <p class="signup-link">Khách hàng mới?<a href="#" class="ms-2">Đăng ký</a></p>
+                                </form>
+                            </div>
+                        </button>
+                        <div class="mb-2">
+                            <button class="btn fw-bold mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">                                <i class="fa fa-shopping-cart fs-4"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Giỏ Hàng</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div><hr>
+                                <div class="offcanvas-body">
+                                    <div class="filter me-2 text-center">
+                                        <img src="./asset/img/cart_banner_image.webp" alt="" class="w-100">
+                                        <p>Chưa có sản phẩm trong giỏ hàng</p>
+                                        <a href="product.html">Trở về trang sản phẩm</a><br>
+                                        <a href="#">Khuyến mãi dành cho bạn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="banner" class="h-100">
+            <div class="container-fluid">
+                <div class="text-center py-5 text-white">
+                    <h4 class="title-heading fw-bold fs-3 pt-3">Sản Phẩm</h4>
+                    <p class="pb-2 pt-3"><a href="index.html" class="text-decoration-none text-white">Trang chủ</a> / <a href="product.html" class="text-decoration-none text-white">Sản Phẩm</a></p>
+                </div>
+            </div>
+        </section>
+        <section id="product" class="mt-5 mb-3">
+            <div class="container">
+                <div class="title text-center pb-4">
+                    <h2 class="position-relative d-inline-block fw-bold">Sản Phẩm Mới Nhất</h2>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="mb-2">
+                        <button class="btn fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample-1" aria-controls="offcanvasExample-1"><span>Bộ Lọc</span><i class="fa-solid fa-filter"></i></button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample-1" aria-labelledby="offcanvasExample-1">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fw-bold" id="offcanvasExample-1">Bộ Lọc</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div><hr>
+                            <div class="offcanvas-body">
+                                <div class="filter me-2">
+                                    <div class="cate">
+                                        <p class="fw-bold">Danh mục sản phẩm</p>
+                                        <ul class="list-unstyled ps-2">
+                                            <li class="all-sp">Sản phẩm khuyến mãi</li>
+                                            <li class="checkban">Sản phẩm nổi bật</li>
+                                            <li class="checkghe">Tất cả sản phẩm</li>
+                                        </ul>
+                                    </div><hr>
+                                    <div class="sectors ">
+                                        <p class="fw-bold">Loại sản phẩm</p>
+                                        <ul class="list-unstyled ps-2">
+                                            <li class="all-sp"><input type="checkbox" name="" id=""> Tất cả</li>
+                                            <li class="checkban"><input type="checkbox" name="" id=""> Bàn</li>
+                                            <li class="checkghe"><input type="checkbox" name="" id=""> Ghế</li>
+                                            <li class="checksofa"><input type="checkbox" name="" id=""> Sofa</li>
+                                        </ul>
+                                    </div><hr>
+                                    <div class="price">
+                                        <p class="fw-bold">Lọc giá</p>
+                                        <ul class="list-unstyled ps-2">
+                                            <li class="all-sp"><input type="checkbox" name="" id=""> Dưới 500k</li>
+                                            <li class="checkban"><input type="checkbox" name="" id=""> Trên 500k</li>
+                                            <li class="checkghe"><input type="checkbox" name="" id=""> Trên 1triệu</li>
+                                            <li class="checksofa"><input type="checkbox" name="" id=""> Trên 5triệu</li>
+                                        </ul><hr>
+                                    </div>
+                                    <div class="color">
+                                        <p class="fw-bold">Màu sắc</p>
+                                        <ul class="list-unstyled ps-2 d-flex">
+                                            <li class="all-sp"><label for="" class="bg-dark text-dark m-1">ww</label></li>
+                                            <li class="all-sp"><label for="" class="bg-info text-info m-1">ww</label></li>
+                                            <li class="all-sp"><label for="" class="bg-warning text-warning m-1">ww</label></li>
+                                            <li class="all-sp"><label for="" class="bg-white text-white border m-1">ww</label></li>
+                                            <li class="all-sp"><label for="" class="bg-primary text-primary m-1">ww</label></li>
+                                            <li class="all-sp"><label for="" class="bg-danger text-danger m-1">ww</label></li>
+                                            <li class="all-sp"><label for="" class="bg-success text-success m-1">ww</label></li>
+                                        </ul><hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sắp xếp
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Giá: Tăng dần</a></li>
+                                <li><a class="dropdown-item" href="#">Giá: Giảm dần</a></li>
+                                <li><a class="dropdown-item" href="#">Tên: A-Z</a></li>
+                                <li><a class="dropdown-item" href="#">Tên: Z-A</a></li>
+                                <li><a class="dropdown-item" href="#">Cũ nhất</a></li>
+                                <li><a class="dropdown-item" href="#">Mới nhất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product d-flex">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-lg-0 mb-4">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/ban/ban1/ban1.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-5%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3 ">Thêm Vào Giỏ</a>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/ge/ge1/ge1.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white text-center">-7%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/sofa/sofa1/sofa1.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-9%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/ge/ge2/ge2.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-9%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>                    
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/ban/ban3/ban3.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-5%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>               
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/sofa/sofa5/sofa5.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-9%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>                
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/ge/ge5/ge5.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-9%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+        
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>           
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 col-xl-3 mb-lg-0">
+                            <div class="card border-2 shadow">
+                                <div class="collection-img position-relative overflow-hidden">
+                                    <img src="./asset/img/ban/ban4/ban4.1.webp" class="product-img w-100">
+                                    <span class="position-absolute top-0 end-0 p-3 rounded-circle bg-warning mt-3 me-3 text-white">-9%</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rating mt-3">
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="text-warning"><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <p class="text-capitalize my-1">chair</p>
+                                    <span class="fw-bold fs-4">$500 <span class="fs-6 text-muted text-decoration-line-through">$500 </span></span>
+                                </div>
+                                <div class="text-center">
+                                    <a href = "#" class = "btn border rounded-pill my-3">Thêm Vào Giỏ</a>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href = "product.html" class = "btn border rounded-pill mt-4 rounded-circle">Xem thêm sản phẩm</a>
+                </div>
+            </div>
+        </section>
+        <section id="policy" class="py-5">
+            <div class="container">
+                <div class="row g-4 text-center bg-light">
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-lg-0 mb-4">
+                        <div class="card border-0 bg-light">
+                            <div class="p-2 pb-3">
+                                <i class="fa-sharp fa-solid fa-box fs-3 p-2 rounded-circle mt-3"></i>
+                                <p class="fw-bold">Giao hàng miễn phí</p>
+                                <p>Thời gian giao hàng nhanh chóng, từ 3 - 5 ngày làm việc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-lg-0 mb-4">
+                        <div class="card pb-2 border-0 bg-light">
+                            <div class=" p-2">
+                                <i class="fa-solid fa-address-book fs-3 p-2 rounded-circle mt-3"></i>             
+                                <p class="fw-bold">Hỗ trợ 24/7</p>
+                                <p>Hotline: Hỗ trợ 0123123123</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-lg-0 mb-4">
+                        <div class="card pb-2 border-0 bg-light">
+                            <div class=" p-2">
+                                <i class="fa-solid fa-money-check-dollar fs-3 p-2 rounded-circle mt-3"></i>                    
+                                <p class="fw-bold">Thanh toán đa dạng</p>
+                                <p>Chấp nhận thanh toán COD, MoMo, Banking</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-lg-0 mb-4">
+                        <div class="card pb-2 border-0 bg-light">
+                            <div class=" p-2">
+                                <i class="fa-solid fa-rotate fs-3 p-2 rounded-circle mt-3"></i>                 
+                                <p class="fw-bold">Đổi trả hàng dễ dàng</p>
+                                <p>Thời gian trả hàng lên tới 30 ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row g-4 ms-3">
+                <div class="col-sm-6 col-md-6 col-xl-3 px-4 pe-5">
+                    <a class="text-decoration-none fs-4 order-lg-0 text-warning" href="index.html">
+                        <i class="fa-solid fa-couch"></i>
+                        <span class="fw-bold ps-2">WOODSHOP</span>
+                    </a>
+                    <p class="text-light">Nội Thất WOODSHOP là thương hiệu đến từ Savimex với gần 40 năm kinh nghiệm trong việc sản xuất và xuất khẩu nội thất đạt chuẩn quốc tế.</p>
+                    <img src="./asset/img/logo_bct.webp" alt="" class="img-fluid h-25 w-50">
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-3 ps-5">
+                    <h5 class="fw-bold text-white">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="index.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Trang Chủ
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="product.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Sản Phẩm
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="new.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Tin Tức
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="contact.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Liên hệ
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="intro.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Giới Thiệu
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-3 ps-5">
+                    <h5 class="fw-bold mb-3 text-white">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            woodshop@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +84 123 123 123
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-3 ps-5">
+                    <h5 class="fw-bold text-white">Follow Us</h5>
+                    <ul class="list-unstyled text-white d-flex">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="input-group mb-3 mt-3">
+                        <h5 class="fw-bold text-muted me-5">ĐĂNG KÝ NHẬN TIN</h5>
+                        <div class="d-flex border rounded-3">
+                            <input placeholder="Enter Your Email ..." type="text" class="border-0 ps-2">
+                            <a href=""><i class="fab fa-telegram-plane bg-dark fs-4 p-1 text-white rounded-end"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-muted">
+                <p>© May 2023.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

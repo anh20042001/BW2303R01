@@ -1,0 +1,379 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Landing page</title>
+	<link rel="stylesheet" href="asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="asset/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.4.0-web/css/all.min.css">
+	<style>
+        * {
+            box-sizing: border-box;
+        }
+        :root{
+            --orange: #df830a;
+        }
+        body{
+            font-weight: lighter;
+            font-family: serif;
+        }
+        .btn:not(.nav-btns button):hover{
+            background-color: var(--orange);
+            color: #fff;
+            border-color: var(--orange);
+        }
+        .navbar .address-text{
+            font: 10px sans-serif;
+        }
+        .navbar .address-text p{
+            margin: 4px;
+        }
+        .nav-link:hover{
+            color: var(--orange)!important;
+            border-color: var(--orange);
+        }
+        #banner{
+            background: linear-gradient(rgba(0,0,0,0.5), #282e18), url(./asset/img/news/sofa.webp);
+        }
+        footer{
+            background: linear-gradient(rgba(0,0,0,0.5), #1f201d), url(./asset/img/logo-footer.png);
+        }
+        footer a:hover{
+            color: var(--orange)!important;
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <section id="header">
+            <div class="top-bar d-none d-sm-block bg-secondary">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="d-flex text-white align-items-center">
+                        <span class="">Hotline: +84 123123123</span>
+                        <span class="ms-2">(8am-22pm)<span class="px-2">|</span></span>
+                        <a class="text-white text-decoration-none" href="contact.html">Liên hệ</a>
+                    </div>
+                    <div class="d-flex text-white align-items-center">
+                        <i class="fa-solid fa-bell mt-1 me-1"></i>
+                        <span>Thông báo của tôi</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow">
+                <div class="container-fluid mx-3">
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="logo-header nav-link text-dark d-flex align-items-center order-lg-0" href="index.html">
+                        <i class="fa-solid fa-couch fs-4"></i>
+                        <span class="ms-2 fw-bold fs-4">WOODSHOP</span>
+                    </a>
+                    <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                        <ul class="navbar-nav mx-auto text-center fw-bold">
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link text-dark" href="index.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link text-dark" href="product.html">SẢN PHẨM</a>
+                            </li>
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link text-dark" href="new.html">TIN TỨC</a>
+                            </li>
+                            <li class="nav-item px-2  border-0">
+                                <a class="nav-link text-dark" href="intro.html">GIỚI THIỆU</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-lg-2 nav-btns d-flex">
+                        <button type="button" class=" btn dropdown position-relative">
+                            <a class="d-flex text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-location-dot fs-4 mb-1 me-2 text-dark"></i>
+                                <div class="d-none d-xl-block address-text text-dark mb-1">
+                                    <p>Giao hoặc đến lấy tại <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                                    <span>Hà Nội, Hai Bà Trưng...</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-sm-start dropdown-menu-sm-end p-2">
+                                <p class="form-title fw-bold border-bottom text-center">KHU VỰC MUA HÀNG</p>
+                                <div class="d-flex">
+                                    <div class="tinh me-3">
+                                        <label for="tinh">Tỉnh/Thành</label>
+                                        <select name="tinh" id="tinh">
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Nghệ An</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Huế</option>
+                                        </select>
+                                    </div>
+                                    <div class="quan">
+                                        <label for="cars">Quận/Huyện</label>
+                                        <select name="quan" id="quan">
+                                            <option value="">- Chọn Quận/Huyện -</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Nghệ An</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Huế</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bg-success mt-3 p-1">
+                                    <label>Giao hàng đến lấy tại:</label>
+                                    <span>Hà Nội, Quận Hai Bà Trưng</span>
+                                </div>
+                                <p>Chọn cửa hàng gần nhất để tối ưu chi phí giao hàng. Hoặc đến lấy hàng</p>
+                            </div>
+                        </button>
+                        <button type="button" class=" btn position-relative">
+                            <a class="d-flex text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-search fs-4 mb-1 me-2 text-dark"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-sm-end p-2">
+                                <p class="form-title fw-bold border-bottom text-center">Tìm Kiếm</p>
+                                <div class="d-flex border ">
+                                    <input type="search" name="" id="" class="border-0 p-2" placeholder="Tìm kiếm sản phẩm">
+                                    <label for=""><i class="fa fa-search m-3"></i></label>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" class="btn dropdown position-relative">
+                            <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user fs-4"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <form class="form text-center">
+                                    <p class="form-title fw-bold">ĐĂNG NHẬP TÀI KHOẢN</p>
+                                    <div class="input-container position-relative d-flex mx-3 border border-3 mb-3 p-2 rounded-3">
+                                        <input placeholder="Enter email" type="email" class="border-0"> 
+                                        <span><i class="fa-solid fa-at "></i></span>
+                                    </div>
+                                    <div class="input-container d-flex mx-3 border border-3 mb-3 p-2 rounded-3">
+                                        <input placeholder="Enter password" type="password" class="border-0">
+                                        <span><i class="fa-solid fa-eye"></i></span>
+                                    </div>
+                                    <input type="submit" name="" id="" placeholder="Sign in" class="btn rounded-pill border px-5 mb-2">
+                                    <p class="signup-link">Khách hàng mới?<a href="#" class="ms-2">Đăng ký</a></p>
+                                </form>
+                            </div>
+                        </button>
+                        <div class="mb-2">
+                            <button class="btn fw-bold mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">                                <i class="fa fa-shopping-cart fs-4"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Giỏ Hàng</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div><hr>
+                                <div class="offcanvas-body">
+                                    <div class="filter me-2 text-center">
+                                        <img src="./asset/img/cart_banner_image.webp" alt="" class="w-100">
+                                        <p>Chưa có sản phẩm trong giỏ hàng</p>
+                                        <a href="product.html">Trở về trang sản phẩm</a><br>
+                                        <a href="#">Khuyến mãi dành cho bạn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="banner" class="h-100">
+            <div class="container-fluid">
+                <div class="text-center py-5 text-white">
+                    <h4 class="title-heading fw-bold fs-3 pt-3">Giới Thiệu</h4>
+                    <p class="pb-2 pt-3"><a href="index.html" class="text-decoration-none text-white">Trang chủ</a> / <a href="product.html" class="text-decoration-none text-white">Giới Thiệu</a></p>
+                </div>
+            </div>
+        </section>
+        <section id="intro" class="my-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-md-0">
+                        <video class="w-100 rounded-3" autoplay loop muted>
+                            <source src="./asset/video/Room.mp4" type="video/mp4"/>
+                        </video>                
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-start text-sm-start">
+                        <h4 class="text-warning pt-2">Wood Shop</h4>
+                        <p>Đồ gỗ mỹ nghệ chắc hẳn đã không còn xa lạ trong cuộc sống hiện nay. Chúng ta không khó để thấy các sản phẩm đồ gỗ đang dần trở thành thị yếu trong các gia đình Việt. Và ngày càng được nâng tầm lên đồ gỗ nội thất cao cấp hơn. WOODSHOP được thành lập và hoạt động trong lĩnh vực sản xuất đồ gỗ nội thất từ những năm 1990, đến nay đã trải qua quá trình gần 30 năm. Quy tụ phong cách nội thất Phương Đông và Phương Tây, kết hợp giữa cổ điển và hiện đại. Chúng tôi luôn mong muốn mang lại cho các bạn một không gian sống tinh tế, hoàn hảo, nâng tầm giá trị cũng như thẩm mỹ cho ngôi nhà. Cũng nhờ hiểu được nhu cầu và thị hiếu của người tiêu dùng, sản phẩm của WOODSHOP chú trọng và thiết kế theo những phong cách riêng dẫn đầu xu hướng nhằm tạo ra một không gian sống thật thoải mái, ấm cúng, tiện nghi và mới mẻ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-1">
+                    <div class="col-lg-6 text-lg-start">
+                        <h4 class="text-warning">Tại sao nên chọn WOODSHOP</h4>
+                        <ul class="text-lg-start">
+                            <li class="px-2">Đảm bảo chất lượng sản phẩm luôn là số 1.
+                            </li>
+                            <li class="px-2 ">Giá thành kinh tế nhất trên thị trường.
+                            </li>
+                            <li class="px-2 ">Hậu mãi chuyên nghiệp nhất.
+                            </li>
+                            <li class="px-2 ">Đảm bảo cung cấp giá trị lợi ích lớn nhất cho khách hàng.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./asset/img/banner/banner4.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="policy" class="py-5">
+            <div class="container">
+                <div class="row g-4 text-center bg-light">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card border-0 bg-light">
+                            <div class="p-2 pb-3">
+                                <i class="fa-sharp fa-solid fa-box fs-3 p-2 rounded-circle mt-3"></i>
+                                <p class="fw-bold">Giao hàng miễn phí</p>
+                                <p>Thời gian giao hàng nhanh chóng, từ 3 - 5 ngày làm việc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card pb-2 border-0 bg-light">
+                            <div class=" p-2">
+                                <i class="fa-solid fa-address-book fs-3 p-2 rounded-circle mt-3"></i>             
+                                <p class="fw-bold">Hỗ trợ 24/7</p>
+                                <p>Hotline: Hỗ trợ 0123123123</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card pb-2 border-0 bg-light">
+                            <div class=" p-2">
+                                <i class="fa-solid fa-money-check-dollar fs-3 p-2 rounded-circle mt-3"></i>                    
+                                <p class="fw-bold">Thanh toán đa dạng</p>
+                                <p>Chấp nhận thanh toán COD, MoMo, Banking</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card pb-2 border-0 bg-light">
+                            <div class=" p-2">
+                                <i class="fa-solid fa-rotate fs-3 p-2 rounded-circle mt-3"></i>                 
+                                <p class="fw-bold">Đổi trả hàng dễ dàng</p>
+                                <p>Thời gian trả hàng lên tới 30 ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row g-4 ms-3">
+                <div class="col-sm-6 col-md-6 col-xl-3 px-4 pe-5">
+                    <a class="text-decoration-none fs-4 order-lg-0 text-warning" href="index.html">
+                        <i class="fa-solid fa-couch"></i>
+                        <span class="fw-bold ps-2">WOODSHOP</span>
+                    </a>
+                    <p class="text-light">Nội Thất WOODSHOP là thương hiệu đến từ Savimex với gần 40 năm kinh nghiệm trong việc sản xuất và xuất khẩu nội thất đạt chuẩn quốc tế.</p>
+                    <img src="./asset/img/logo_bct.webp" alt="" class="img-fluid h-25 w-50">
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-3 ps-5">
+                    <h5 class="fw-bold text-white">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="product.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Trang Chủ
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="product.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Sản Phẩm
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="new.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Tin Tức
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="contact.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Liên hệ
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="intro.html" class="text-decoration-none text-white">
+                                <i class="fas fa-chevron-right me-3"></i>Giới Thiệu
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-3 ps-5">
+                    <h5 class="fw-bold mb-3 text-white">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            woodshop@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +84 123 123 123
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-3 ps-5">
+                    <h5 class="fw-bold text-white">Follow Us</h5>
+                    <ul class="list-unstyled text-white d-flex">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-white fs-4 me-3">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="input-group mb-3 mt-3">
+                        <h5 class="fw-bold text-muted me-5">ĐĂNG KÝ NHẬN TIN</h5>
+                        <div class="d-flex border rounded-3">
+                            <input placeholder="Enter Your Email ..." type="text" class="border-0 ps-2">
+                            <a href=""><i class="fab fa-telegram-plane bg-dark fs-4 p-1 text-white rounded-end"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-muted">
+                <p>© May 2023.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
